@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="#tutorials">Interactive Tutorials</a></li>
+                <li><a href="#tracking">Expense Tracking</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="login.html" class="login-btn">Login / Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login-signup">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form action="login-process.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <h2>Sign Up</h2>
+                <form action="signup-process.php" method="POST">
+                    <label for="new-username">Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                    <label for="new-password">Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Wallet Wingman 2024</p>
+    </footer>
+</body>
+</html>
