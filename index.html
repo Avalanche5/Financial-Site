@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="animation-container">
+        <h1 class="animated-title">Welcome to Financial Literacy for Students</h1>
+    </div>
     <header>
-        <h1>Welcome to Financial Literacy for Students</h1>
         <nav>
             <ul>
                 <li><a href="#budgeting">Budgeting</a></li>
                 <li><a href="#saving">Saving</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
                 <li><a href="#tracking">Expense Tracking</a></li>
                 <li><a href="#quizzes">Quizzes</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -27,7 +30,11 @@
         <section id="features">
             <div class="feature">
                 <h3>Interactive Tutorials</h3>
-                <p>Learn how money works with our step-by-step guides.</p>
+                <p>Learn how to budget and save with our step-by-step guides.</p>
+            </div>
+            <div class="feature">
+                <h3>Scholarship Finder</h3>
+                <p>Find and track scholarships and grants to support your education.</p>
             </div>
             <div class="feature">
                 <h3>Expense Tracking</h3>
@@ -42,5 +49,12 @@
     <footer>
         <p>&copy; 2024 Financial Literacy for Students</p>
     </footer>
+    <script>
+        // this thingy hides animation after a few seconds, 
+        // if u want to put this in javascript u can paste into script.js
+        setTimeout(() => {
+            document.querySelector('.animation-container').style.display = 'none';
+        }, 3000); // 3 seconds
+    </script>
 </body>
 </html>
